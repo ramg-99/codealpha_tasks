@@ -454,5 +454,4 @@ Total lines of code: 256
 
 ---
 
-*Report generated as part of internship Task 3: Secure Coding Review*  
-*All code samples are for educational purposes only.*
+
