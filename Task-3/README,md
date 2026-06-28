@@ -1,0 +1,36 @@
+# Task 3 — Secure Coding Review
+
+## Overview
+Security audit of a Python Flask web application to identify
+and fix common vulnerabilities using static analysis and
+manual code review.
+
+## Tools Used
+- Bandit (Static Analysis)
+- Manual Inspection
+- OWASP Top 10
+
+## Vulnerabilities Found
+- SQL Injection (4 locations)
+- OS Command Injection
+- Cross-Site Scripting (XSS)
+- Weak Hashing (MD5)
+- Hardcoded Credentials
+- Missing Authentication
+- Unrestricted File Upload
+- Path Traversal
+- And more...
+
+## Results
+| Severity | Before | After |
+|----------|--------|-------|
+| HIGH     |   3    |   0   |
+| MEDIUM   |   6    |   0   |
+| LOW      |   3    |   3   |
+
+## How to Run
+pip install flask bandit bcrypt python-dotenv
+bandit -r vulnerable_app/app_vulnerable.py
+
+## Internship
+Task 3 of Cybersecurity Internship — Secure Coding Review
